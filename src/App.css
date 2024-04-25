@@ -1,4 +1,6 @@
 .App {
+  display: flex;
+  flex-direction: row;
   text-align: center;
 }
 
@@ -13,19 +15,281 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sm-devices-navbar{
+  display: none;
+}
+
+.sm-carousel{
+  display: none;
+}
+
+.md-carousel{
+  display: none;
+}
+.chrono-container-sm{
+  display: none;
+}
+
+.main-page {
+  background-color: cornsilk;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+
+.navbar{
+  width: 200px;
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 0px;
+  padding: 25px 10px;
+  transition: width 0.3s ease;
+}
+
+.collapsed {
+  width: 50px; /* Collapsed width */
+}
+
+.nav-item-list{
+  align-self: center;
+  list-style-type: none;
+  padding: 0px;
+}
+
+.nav-item{
+  font-size: 30px;
+   color:gray;
+    margin: 8px;
+    font-weight: 200;
+}
+
+.expanded-nav-item{
+  display: flex;
+  flex-direction: row;
+}
+.name{
+  color: #ffffff;
+  font-size: 20px;
+  font-family: roboto;
+}
+
+.desc{
+  color: gray;
+  font-size: 16px;
+  font-family: roboto;
+  margin-bottom: 5px;
+}
+
+.header-part-sm{
+  display: none;
+}
+
+.header-part{
+  height: 190px;
+  width: 100%;
+  background-image: linear-gradient(to bottom, navy 50%, transparent 50%);
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.cal-clock-icon{
+  font-size: 20px;
+  color: #ffffff;
+  margin-right: 3px;
+}
+.name-time-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 20px;
+  background-color: transparent;
+  align-items: center;
+}
+.cal-clock-list{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.cal-clock-list-item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 10px;
+  color: #ffffff;
+  font-size: 14px;
+}
+.cards-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding: 0px;
+  border-width: 0px;
+}
+
+.card{
+  height: 100px;
+  width: 150px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.card:hover{
+  filter: brightness(50%);
+}
+
+.library-icon-1{
+  font-size: 28px;
+  color: rgb(88, 0, 139);
+}
+
+.library-icon-2{
+  font-size: 28px;
+  color: rgb(139, 63, 0);
+} 
+.library-icon-3{
+  font-size: 28px;
+  color: rgb(0, 139, 58);
+}
+.library-icon-4{
+  font-size: 28px;
+  color: rgb(139, 0, 93);
+}
+.library-icon-5{
+  font-size: 28px;
+  color: rgb(0, 95, 139);
+}
+.card-heading{
+  font-size: 16px;
+  padding: 0px;
+}
+.card-desc{
+  font-size: 14px;
+  padding: 0px;
+}
+.main-page-carousel-releases{
+  display: flex;
+  flex-direction: row;
+  margin-top: 170px;
+  width: 100%;
+  background-color: transparent;
+  margin: 20px;
+}
+.carousel-part{
+  height: 300px;
+  width: 60%;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin-right: 20px;
+  padding: 30px;
+}
+
+.carousel-card{
+  height: 85%;
+  width: 20%;
+  margin-right: 3px;
+  border-width: 1px;
+  border-color: antiquewhite;
+}
+
+.carousel-image{
+  height: 40%;
+  width: 100%;
+} 
+
+.carousel-heading{
+  font-size: 10px;
+  color: black;
+}
+
+.carousel-desc{
+  font-size: 10px;
+  color: gray;
+}
+
+.view-more-btn{
+  background-color: blue;
+  height: 36px;
+  width: 75px;
+  border-radius: 5px;
+  border-width: 0px;
+  color: #ffffff;
+  margin-top: 40px;
+}
+.recent-releases-part{
+  width: 32%;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.drop-down-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.recent-releases{
+  color: lightskyblue;
+  font-size: 18px;
+}
+
+.countries{
+  height: 38px;
+  width: 72px;
+}
+.chrono-container{
+  height: 80%;
+  width: 100%;
+}
+.chrono-card{
+  height: 100px;
+  border-width: 0px;
+}
+
+.chrono-date{
+  color: lightskyblue;
+  font-size: 18px;
+}
+
+.chrono-heading{
+  font-size: 16px;
+  color: black;
+}
+
+.chrono-desc{
+  font-size: 14px;
+  color: darkgray;
+}
+
+.view-more-cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.view-more-card{
+  height: 180px;
+  width: 25%;
+  border-radius: 8px;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +299,234 @@
   to {
     transform: rotate(360deg);
   }
+}
+/* 
+for Extra small devices (phones 600px and down)
+*/
+
+@media screen and (max-width:600px){
+  .App{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .sm-carousel{
+    display: block;
+    width: 100%;
+  }
+
+  .chrono-container{
+    display: none;
+  }
+
+  .chrono-container-sm{
+    display: block;
+    height: 200px;
+    width: 100%;
+  }
+
+  .chrono-date-sm{
+    color: lightskyblue;
+    font-size: 14px;
+  }
+  
+  .chrono-heading-sm{
+    font-size: 12px;
+    color: black;
+  }
+  
+  .chrono-desc-sm{
+    font-size: 12px;
+    color: darkgray;
+  }
+
+  .main-page-carousel-releases{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px;
+  }
+
+  .recent-releases-part{
+    width: 80%;
+    margin-top: 20px;
+  }
+  .sm-devices-navbar{
+    display: block;
+    height: 10vh;
+  }
+
+  .lg-m-devices-navnar{
+    display: none;
+  }
+
+  .lg-carousel{
+    display: none;
+  }
+
+  .carousel-card{
+    width: 100%;
+    margin-right: 0px;
+  }
+  .carousel-part{
+    margin-right: 0px;
+  }
+  .cards-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .card{
+    width: 25%;
+    height: 100px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+  }
+
+  .library-icon-sm{
+    font-size: 22px;
+  } 
+  .card-heading{
+    font-size: 10px;
+  }
+
+  .card-desc{
+    font-size: 10px;
+  }
+  .name-time-container{
+    display: none;
+  }
+
+  .header-part-sm{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 140px;
+  }
+  .name-sm{
+    font-size: 12px;
+    color: #ffffff;
+    font-family: roboto;
+  }
+
+  .desc-sm{
+    font-size: 10px;
+    color: #ffffff;
+    font-family: roboto;
+  }
+
+  .cal-clock-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-right: 0px;
+  }
+
+  .cal-clock-list-item{
+    font-size: 12px;
+    padding: 0px;
+  }
+
+  .desc{
+    display: none;
+  }
+
+  .recent-releases{
+    font-size: 15px;
+  }
+  .countries{
+    height: 28px;
+    width: 60px;
+  }
+  .chrono-container{
+    width: 100%;
+    height: 250px;
+  }
+
+  .view-more-card{
+    height: 180px;
+    width: 50%;
+  }
+}
+
+/*
+Medium devices (landscape tablets, 768px and up)
+*/
+
+@media screen and (min-width: 768px) and (max-width:992px){
+  .header-part{
+    height: 190px;
+  }
+  .card{
+    width: 15%;
+    height: 100px;
+  }
+
+  .name{
+    font-size: 16px;
+  }
+
+  .desc{
+    font-size: 10px;
+  }
+
+  .cal-clock-icon{
+    font-size: 16px;
+  }
+
+  .card-heading{
+    font-size: 12px;
+  }
+
+  .card-desc{
+    font-size: 12px;
+  }
+
+  .library-icon-md{
+    font-size: 18px;
+  }
+  .lg-carousel{
+    display: none;
+  }
+
+  .md-carousel{
+    width: 100%;
+    display: block;
+  }
+  .carousel-card{
+    width: 30%;
+    height: 70%;
+  }
+  .carousel-image{
+    width: 100%;
+  }
+  .recent-releases{
+    font-size: 16px;
+  }
+
+  .chrono-container{
+    width: 100%;
+  }
+
+  .view-more-card{
+    height: 180px;
+    width: 30%;
+  }
+}
+
+/*
+Large devices (laptops/desktops 992 px and up) 
+*/
+
+@media screen and (min-width: 992px){
+
 }
